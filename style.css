@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    position: relative;
+    padding: 25px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 14px 28px rgba(0,0,0,0.22);
+}
+.image{
+    width: 50%;
+    height: 160px;
+    position: relative;
+    background-color: rgba(254, 109, 5, 0.506);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px solid white;
+    border-radius: 60%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.text .name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text .tite{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 25px;
+    margin-top: 10px;
+}
+.social i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social .fa-brands{
+    background-color: rgba(71, 78, 78, 0.37);
+    width: 40px;
+    align-items: center;
+    padding-left: px;
+    padding-top: px;
+    border-radius: 20px;
+    height: 40px;
+}
+.social a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    transition:color 0.3s ease; 
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 6px rgba(82, 67, 67, 0.569);
+    border-radius: 50%;
+
+}
+
+.social a:hover {
+    color: #007bff; /* Change this to your desired color */
+}
+.social a:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(145, 140, 140, 0.2);
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.buttons button{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px;
+    outline: none;
+    border: 0.5px solid rgb(234, 220, 220);
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 6px rgba(94, 80, 80, 0.465);
+}
+
+.buttons .website button{
+    background-color: #0b81ff;
+}
+.buttons .cont{
+    background-color: orangered;
+}
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.website .web {
+    background-color: #007bff; /* Specific color for the Website button */
+}
+
+.contact .cont {
+    background-color: #28a745; /* Specific color for the Contact button */
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    background-color: #41403f;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.hire{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.hire a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 72, 0);
+}
